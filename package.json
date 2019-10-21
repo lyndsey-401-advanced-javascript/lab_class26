@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "eslint-config-airbnb": "^18.0.1",
     "manifest": "^0.1.4",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
@@ -15,7 +16,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint"
   },
   "eslintConfig": {
     "extends": "react-app"
