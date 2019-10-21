@@ -1,6 +1,7 @@
+/* eslint-disable react/prefer-stateless-function */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './app.js';
+import App from './app';
 
 class Main extends React.Component {
   render() {

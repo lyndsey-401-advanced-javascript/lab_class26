@@ -1,7 +1,9 @@
+/* eslint-disable react/prefer-stateless-function */
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable max-classes-per-file */
 import React from 'react';
-import { connect } from 'react-redux';
-import Counter  from './header';
-import Footer from './footer.js'; 
+import Counter from './header';
+import Footer from './footer'; 
 
 class Main extends React.Component {
   constructor(props) {
@@ -12,16 +14,16 @@ class Main extends React.Component {
   }
 
   // TODO: increment counter instead of math.random
-  handleButtonClick = e => {
+  handleButtonClick = (e) => {
     e.preventDefault();
-    this.setState({ counter: this.counter++ });
+    this.setState({ counter: this.counter });
   };
 
   render() {
     return (
       <div>
         <h4>{this.state.counter}</h4>
-        <button onClick={this.handleButtonClick}>Click Me</button>
+        <button type="button" onClick={this.handleButtonClick}>Click Me</button>
       </div>
     );
   }
@@ -30,11 +32,11 @@ class Main extends React.Component {
 class App extends React.Component {
   render() {
     return (
-      <React.Fragment>
+      <>
         <Counter />
         <Main />
         <Footer />
-      </React.Fragment>
+      </>
     );
   }
 }
