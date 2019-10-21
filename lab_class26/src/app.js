@@ -11,6 +11,7 @@ class Main extends React.Component {
     };
   }
 
+  // TODO: increment counter instead of math.random
   handleButtonClick = e => {
     e.preventDefault();
     this.setState({ counter: this.counter++ });
