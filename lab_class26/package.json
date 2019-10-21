@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "eslint": "^6.5.1",
     "manifest": "^0.1.4",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
@@ -34,6 +33,17 @@
     ]
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-react-app": "^5.0.2",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^21.27.2",
+    "eslint-plugin-react": "^7.16.0",
     "react-test-renderer": "^16.10.2"
   }
 }
